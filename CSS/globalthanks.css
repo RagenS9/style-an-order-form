@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+header {
+     background-color: #C4CCD7;
+}
+
+header h1 {
+    animation-delay: 1ms;
+    animation-duration: 1.2s;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: #27476E;
+    text-align: center;
+    padding: 20px;
+}
+body {
+    animation-delay: 1ms;
+    animation-duration: 1.2s;
+    background-color: #C4CCD7;
+    background-image: radial-gradient(circle, #C4CCD7, darkslategray);
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+img {
+    animation-delay: 1.2s;
+    animation-duration: 2400ms;
+    width: 30%;
+    text-align: center;
+}
