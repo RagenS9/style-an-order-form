@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box; \\* applies to everything on the page. So rarely use this.
+when you're first building new software up, add
+}
+img {
+    width: 100%;
+}
+body {
+	padding: 20px;
+	background; whitesmoke
+}
+
+.card {
+	padding: 20px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); \\ this puts the shadown on the outside
+	background-color: #ffffff \\this is the color code for white
+    max-width: 400px; \\ sets maxium width. wont get any wider than this.
+    width: 100% \\ redundant here since set max and min widths. but can still include it.
+    min-width: 200px; \\ sets minimum width. wont get any smaller than this.
+    margin: 0 auto \\ this will center the box. if you only have two it's top/bottom and right/left. So this one is 0 margin for top and bottom and will equalize the sides on right and left. since we set the max width, it won't be across the full screen.
+    font-family: 'Open Sans', sans-serif; \\ got this from the google font page
+}
+.field {
+    margin-bottom: 20px; \\gives us space between the field and the next item.
+}
+.field > label {
+    font-weight: bold;
+    display: block; \\ makes it the full width, in this case, of the parent element.
+    margin-bottom: 5px; \\ gives us space between the label and the next thing like the text box
+}
+
+.field > input[type=text], 
+.field > input[type=password] {
+    width: 100%;
+    height; 40px;
+    border: 1px solid silver; \\ to put a border on something
+    border-radius: 4px; \\ this rounds the corners
+    box-shadow: inset 2px  2px 5px rgba(0, 0, 0, 0.1) \\this puts the shadow on the inside
+}
+.field > select {
+    width: 100%;
+    height: 40px; \\ 40px represents roughly the size of your finger, so if someone needs to click on something, use at least 40px.
+}
+
+\if not using classes on the radios, but add a double-class to the div. He thinks this one works best because you could use this double-class on other sections, and not have to class all of the labels individually.
+.field.labels-wrapping { \\if you have a double field, no space .field.otherclass
+    font-weight: normal;
+}
+.field.labels-wrapping > label:first-child { \\here, you've said the first child (the first label) should be in bold.  There's only the first child, nth child, and last child. In here you can specify the ones. So nth-child(2) would be the second one.
+    font-weight: bold;
+}
+
+\if using classes on the radios
+.field > select {
+    width: 100%;
+    height: 40 px
+}
+.field > .label-wrap {
+    font-weight: normal;
+}
+.field.field-centered{ \\this centers the entire line, so moves the in-line button (all buttons are in-line) to the center of the parent container. it does not center the text within the button. THe button by default is centered. you can override that. Can insert an image within the button. if you were to put text-align: center in the button field, it would be centering the text within the button.
+    text-align: center;
+}
+]
+.field > button { \\ dont have to add the second class for this one because the main class is constant
+    background: darkslateblue; \\ to give it a color
+    color: white; \\ to change the color of the font
+    border: none; \\ gets rid of the border that automatically comes with the button -- an icky 90s 3-D border
+    padding: 15px; 
+    font-weight: bold;
+    border-radius: 4px; 
+    transition: all .3s ease; \\ this should gradually ease to whatever happens afer the click. He highly suggests you always use ease. 
+    \\.3s is the common space. too much longer and things feel sludgy. Too fast, and you won't even notice it.
+    \\ all-- the whole button. Or you could change just the color.
+    \\ put the transition on the base element first and THEN add the what will change. 
+}
+.field > button:hover{
+    transform: scale(2); \this allows you to take any element of the page and scale it, rotate it, whatever you want out of the way
+    background: darkviolet;
+}

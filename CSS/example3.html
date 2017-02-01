@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soothe</title>
+   <meta charset="utf-8" />
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css"/>
+  <link rel="stylesheet" href="css/global3.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="card">
+      <form method="post" action=""> \\ action is where it gets sent, like formspree or wherever a real server would be.
+
+        <div class="field">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="first_name" required/> \\required makes it so that the form cannot be submitted without data in that field
+        </div>
+        <div class="field">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="last_name" required/>
+        </div>
+        <div class="field">
+            <label for="referredBy">Referred By</label>
+            <input id="referredBy" name="referredBy" required/>>
+            <option value="google">Google</option>
+            <option value="twitter">Twitter</option>
+            <option value="tv">TV Ad</option>
+            <option value="friend" selected>A Friend</option> \\ add "selected" to make this the default option 
+        </div>
+        <div class="field">
+          <label>How would you rate our service?</label>
+          <label class="label-wrap"> \\ here we add a class to these labels because we had already said in CSS that the labels would be in bold. We don't want these to be bold because they are a subset of the real label, so they should be in ROM. So we add a new class so that these sub-labels will be in ROM but the first label will still be in bold.
+            <input type="radio" name="rating" value="10">
+            Awesome \\ it's fairly common not to give radios ids because you want the button in line with the text.
+          </label>
+             <label class="label-wrap">
+            <input type="radio" name="rating" value="5">
+            Just OK
+          </label>
+             <label class="label-wrap">
+            <input type="radio" name="rating" value="1">
+            Terrible
+          </label>
+        </div>
+                </div>
+        <div class="field labels-wrapping">\\ an alternate way to do it would be to use a double class on the div. but that would unbold all of the labels, and we still want the top label to be in bold. Here you don't need to make a class for the sub-labels. if you used an h-tag on the top one to make it bold again, you'd have to go through and change the size/everything to match the rest of the bold labels. So this is not how he would do this. Or you could use an id on the first label, like label-radio, and assign the same bold style as the rest of the labels for just that id. OR you could say this class.class > label normal and class.class label:first-child to set it to bold. He thinks this last one would work well. He thinks this one works best because you could use this double-class on other sections, and not have to class all of the labels individually.
+          <label>How would you rate our service?</label>
+          <label> 
+            <input type="radio" name="rating" value="10">
+            Awesome \\ it's fairly common not to give radios ids because you want the button in line with the text.
+          </label>
+             <label>
+            <input type="radio" name="rating" value="5">
+            Just OK
+          </label>
+             <label>
+            <input type="radio" name="rating" value="1">
+            Terrible
+          </label>
+        </div>
+        <div class="field field-centered"> \\ first and second classes, field and field-centered. base class and then base class with a hyphen to a modifier
+            <button type="submit">Send</button> \or can do it: input type="submit" value="Send"/>> \\ This will only be text. Can't nest buttons with it.
+        </div>
+      </form>
+	
+</div>

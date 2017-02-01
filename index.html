@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soothe</title>
+  <meta charset="utf-8" />
+ <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/globalday3.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <input type="hidden" name="product" value="puppyparty">
+</head>
+
+<body>
+    <header>
+    <h1>Soothe Party Rentals</h1>
+    </header>
+
+    <section id="productDescription">
+        <div>Puppy Party</div> 
+        <!--\\want to change font, size, and maybe color-->
+        <img class="productPic" src="http://az616578.vo.msecnd.net/files/2016/02/22/6359174720225254612121023078_puppy5.jpg" alt="puppies"> 
+        <!--\\want to run photo left and text right, next to photo-->
+        <p class="productText">Does your office space need some stress relief? Snuggling with animals is a proven way to reduce blood pressure and soothe a stressful environment. The puppies that come with a Puppy Party rental are still small, but weaned and ready to be adopted. They all have happy homes with foster parents until they find permanent homes, though, so don't worry about them--just snuggle and play! You can choose to host a "puppy" party with young, mature, or senior dogs. All have been socialized to be comfortable around new people and in group situations. If someone falls in love, please ask them to fill out an adoption application for consideration.</p>
+        <br/>
+            <a href="http://www.edcr.org/">
+                Direct party-goers to click on this link if they wish to be considered as a permanent fur-home to the dogs that attend your puppy party. <em>All homes will be considered, but no home is a guaranteed match for any particular dog</em>. 
+                </a>
+    </section>
+
+    <section id="order">
+        <div>
+            <form method="post" action="https://formspree.io/ragens9@att.net">
+                <h1>Party Information</h1>
+                    <div class="field">
+                        <!--\\ dropdown-->
+                        <label for="dog_age">Select the age of the dogs you would like to have at your party:</label>
+                        <select id="dog_age" name="dog_age"> 
+                            <option value="puppy">Puppy (weaned-1 year of age)</option>
+                            <option value="mature">Mature (1-5 years of age)</option>
+                            <option value="senior">Senior (5+ years of age)</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="dog_numbers"></label>Number of Dogs</label>
+                        <input type="number" id="dog_numbers" name="Number of Dogs"/ min="1" max="7">
+                    </div>
+
+                    <div class="field">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="first_name" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="last_name" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="addStreetNumberName">Address for party location: <br/>Street Number and Name</label>
+                        <input type="text" id="addStreetNumberName" name="addStreetNumberName">
+                    </div>
+
+                    <div class="field">
+                        <label for="addCity">City</label>
+                        <input type="text" id="addCity" name="addCity">
+                    </div>
+
+                    <div class="field">
+                        <label for="addState">State</label>
+                        <select id="addState" name="addState">
+                            <option value="indiana">Indiana</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="kentucky">Kentucky</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="addZip">Zip Code</label>
+                        <input type="text" id="addZip" name="addZip">
+                    </div>
+
+                    <div class="field">
+                        <label for="accessInfo">Building access information</label>
+                        <textarea id="accessInfo" name="buildingAccessInfo" rows="15" cols="50" placeholder="Note where puppy handlers should park and enter your building. If permission is required, or building escort needed once we arrive, it is up to you to arrange these setups. No refunds will be allowed if access is denied once we have arrived."></textarea>
+                    </div>
+
+                    <div class="field">
+                        <label for="wantsNewsLetter">Sign up for <em>News on Soothe</em></label>
+                        <input type="checkbox" id="wantsNewsLetter" name="wants_newsletter" value="yes">
+                    </div>
+
+                    <div class="field field-centered">
+                        <button type="submit">Send</button>
+                    </div>
+            </form>
+        </div>
+    </section>
+
+    <footer> 
+    <!--\\ want to make size smaller-->
+    <p>Soothe is dedicated to providing unique stress-relieving aids and experiences right in your office or party locations. Puppy parties, traveling massage chairs, music and dance therapy, and more are available for your stress-relieving enjoyment. Soothe your life!</p>
+    </footer>
+
+</body>
+</html>
